@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.site-section{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.site-title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.site-section{
+  width: 100%;
+  max-width: 1000px;
+  height: 800px;
+  background-color: azure;
+  margin: 0 auto;
+}
+
+.form{
+  margin-top: 30px;
+}
+
+.site-section__title{
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.form__input{
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  padding: 15px 10px 15px 20px;
+  outline: none;
+  border: none;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+}
+
+.form__button{
+  margin-top: 15px;
+  padding: 8px;
+  width: 120px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.form__inner{
+  margin-top: 40px;
+}
+
+.form__wrapper{
+  width: 495px;
+  height: 80px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+.result1 {
+  display: block;
+  padding: 30px 10px 10px 100px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.result1::before{
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/man.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 9px;
+  left: 25px;
+  position: absolute;
+  z-index: 2;
+}
+
+.result2 {
+  display: block;
+  padding: 30px 10px 10px 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.result2::before{
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/bicycle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 9px;
+  left: 25px;
+  position: absolute;
+  z-index: 2;
+}
+
+.result3 {
+  display: block;
+  padding: 30px 10px 10px 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.result3::before{
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/car.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 9px;
+  left: 25px;
+  position: absolute;
+  z-index: 2;
+}
+
+.result4 {
+  display: block;
+  padding: 30px 10px 10px 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.result4::before{
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/plane.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 9px;
+  left: 25px;
+  position: absolute;
+  z-index: 2;
+}
