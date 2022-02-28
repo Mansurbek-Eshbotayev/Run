@@ -9,6 +9,8 @@ function man(number,speed){
     return number / speed;
   }
 
+  
+
 elForm.addEventListener("submit", function(e){
   e.preventDefault()
 
@@ -17,7 +19,39 @@ elForm.addEventListener("submit", function(e){
   var baySpeed =20;
   var byCar =80;
   var byPlan =880;
+
   
+  
+
+  if(elUserInputVal <= 0 || isNaN(elUserInputVal)){
+    elResult1.textContent = "Raqam kiriting!"
+    elResult2.textContent = "Raqam kiriting!"
+    elResult3.textContent = "Raqam kiriting!"
+    elResult4.textContent = "Raqam kiriting!"
+
+    elResult1.classList.add("result-error");
+    elResult2.classList.add("result-error");
+    elResult3.classList.add("result-error");
+    elResult4.classList.add("result-error");
+
+    elResult1.classList.remove("result-success");
+    elResult2.classList.remove("result-success");
+    elResult3.classList.remove("result-success");
+    elResult4.classList.remove("result-success");
+    return
+  }
+  else{
+    elResult1.classList.remove("result-error");
+    elResult2.classList.remove("result-error");
+    elResult3.classList.remove("result-error");
+    elResult4.classList.remove("result-error");
+
+    elResult1.classList.add("result-success");
+    elResult2.classList.add("result-success");
+    elResult3.classList.add("result-success");
+    elResult4.classList.add("result-success");
+    
+  }
   
 
 
